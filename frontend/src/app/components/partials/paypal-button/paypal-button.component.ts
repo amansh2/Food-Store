@@ -51,8 +51,7 @@ export class PaypalButtonComponent implements OnInit {
           {
             next: (orderId) => {
               this.cartService.clearCart();
-              window.location.replace('/track/' + orderId);
-              // window.location.href = '/track/' + orderId;
+              this.router.navigateByUrl('/track/' + orderId, { replaceUrl: true });
               this.commonService.showToast({
                 severity: 'success',
                 summary: 'success',
