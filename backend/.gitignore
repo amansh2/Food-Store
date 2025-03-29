@@ -26,10 +26,6 @@ src/environments/environment*.ts
 # Node modules (installed dependencies)
 node_modules/
 
-# Compiled files
-*.js
-*.js.map
-*.d.ts
 
 # TypeScript-related
 *.tsbuildinfo
