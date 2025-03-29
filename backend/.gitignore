@@ -1,0 +1,63 @@
+# Angular build outputs
+dist/
+out-tsc/
+.angular/
+
+# IDE and Editor settings
+.vscode/
+.idea/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
+
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Environment files (don't expose secrets)
+src/environments/environment*.ts
+
+# Node modules (installed dependencies)
+node_modules/
+
+# Compiled files
+*.js
+*.js.map
+*.d.ts
+
+# TypeScript-related
+*.tsbuildinfo
+
+# Package lock files (if using one, keep only one)
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+
+# Dependencies cache
+.npm/
+.yarn/
+.pnpm-store/
+
+# Test coverage
+coverage/
+
+# Cypress and Playwright test outputs
+cypress/screenshots/
+cypress/videos/
+playwright-report/
+test-results/
+
+# Temporary files
+temp/
+.tmp/
+.DS_Store
+
+# Miscellaneous
+*.bak
+Thumbs.db

@@ -1,0 +1,41 @@
+<div class="order-list-container">
+    <h2 class="title">Orders</h2>
+  
+    <ng-container *ngIf="orders.length > 0; else noOrdersTemplate">
+      <p-table [value]="orders" responsiveLayout="scroll" class="custom-table">
+        <ng-template pTemplate="header">
+          <tr>
+            <th>Order ID</th>
+            <th>Name</th>
+            <th>Total Price</th>
+            <th>Status</th>
+            <th>Actions</th>
+          </tr>
+        </ng-template>
+        <ng-template pTemplate="body" let-order>
+          <tr>
+            <td>{{ order._id }}</td>
+            <td>{{ order.name }}</td>
+            <td>${{ order.totalPrice }}</td>
+            <td>{{ order.status }}</td>
+            <td>
+              <button (click)="viewOrderDetails(order._id)" class="view-btn">
+                View Details
+              </button>
+            </td>
+          </tr>
+        </ng-template>
+      </p-table>
+    </ng-container>
+  
+    <!-- No Orders UI -->
+    <ng-template #noOrdersTemplate>
+      <div class="no-orders-container">
+        <img src="https://img.freepik.com/free-vector/no-contact-pick-up-delivery-abstract-concept_335657-3054.jpg" alt="No Orders" class="no-orders-image" />
+        <h3>No Orders Found</h3>
+        <p>Looks like you haven't placed any orders yet.</p>
+        <button class="shop-now-btn" (click)="shopNow()">Shop Now</button>
+      </div>
+    </ng-template>
+  </div>
+  

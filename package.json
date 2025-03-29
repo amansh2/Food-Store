@@ -1,0 +1,16 @@
+{
+  "name": "food-store",
+  "version": "1.0.0",
+  "description": "1. Introduciton to the course\r 2. Install development tools\r 3. Create Angular App\r    1. Create project's folder\r    2. Install @angular/cli\r    3. Create App as frontend",
+  "main": "index.js",
+  "engines": {
+    "node": ">=18 <19"
+  },
+  "scripts": {
+    "dev": "cd frontend && npm start & cd backend && npm start",
+    "start": "cd backend/built && node server.js",
+    "build": "cd frontend && npm run build"
+  },
+  "author": "",
+  "license": "ISC"
+}

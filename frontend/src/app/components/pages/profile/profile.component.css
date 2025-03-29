@@ -1,0 +1,54 @@
+.profile-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f4f4f4; /* Light gray background */
+  }
+  
+  .p-card {
+    width: 450px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    background: white;
+  }
+  :host ::ng-deep .p-card{
+    padding: 2rem;
+  }
+  :host ::ng-deep.p-card-content{
+    padding: 0 !important;
+  }
+  
+  h2 {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #af1313;
+    font-weight: bold;
+  }
+  
+  .profile-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .field {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 0;
+    align-items: center;
+  }
+  
+  label {
+    font-weight: bold;
+    color: #af1313;
+    font-size: 14px;
+  }
+  
+  p {
+    font-size: 16px;
+    color: #333;
+    margin: 0;
+    font-weight: 500;
+  }
+  
